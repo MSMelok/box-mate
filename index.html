@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Selection Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Equipment Selection Guide</h1>
+    <div id="equipment-guide">
+        <!-- Dropdown for Equipment Selection -->
+        <label for="equipment-type">Select Equipment:</label>
+        <select id="equipment-type">
+            <option value="">-- Select Equipment --</option>
+        </select>
+
+        <!-- Equipment Details -->
+        <div id="equipment-details">
+            <label for="addressable">Addressable:</label>
+            <input type="text" id="addressable" readonly>
+
+            <label for="format">Format:</label>
+            <input type="text" id="format" readonly>
+
+            <label for="status">Status:</label>
+            <input type="text" id="status" readonly>
+
+            <label for="equip-type">Equipment Type:</label>
+            <input type="text" id="equip-type" readonly>
+
+            <label for="manufacturer">Manufacturer:</label>
+            <input type="text" id="manufacturer" readonly>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" readonly>
+
+            <label>
+                <input type="checkbox" id="events" disabled> Events
+            </label>
+            <label>
+                <input type="checkbox" id="nvod" disabled> Nvod
+            </label>
+        </div>
+
+        <!-- Equipment Pictures -->
+        <div id="equipment-pictures">
+            <img id="picture1" src="" alt="Equipment Picture 1" style="display: none;">
+            <img id="picture2" src="" alt="Equipment Picture 2" style="display: none;">
+            <img id="picture3" src="" alt="Equipment Picture 3" style="display: none;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
