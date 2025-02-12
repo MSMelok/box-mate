@@ -1,0 +1,50 @@
+[
+    {
+        "type": "Altice One ECM",
+        "addressable": "No",
+        "format": "N/A",
+        "status": "A",
+        "equipType": "50-Altice 1 Modem",
+        "manufacturer": "X",
+        "location": "Z-DefaultOutlet",
+        "events": false,
+        "nvod": false,
+        "pictures": ["img1.jpg", "img2.jpg", "img3.jpg"]
+    },
+    {
+        "type": "Altice One Main",
+        "addressable": "Yes",
+        "format": "4",
+        "status": "A",
+        "equipType": "20-Sagemcom Altice 1",
+        "manufacturer": "X",
+        "location": "Z-DefaultOutlet",
+        "events": true,
+        "nvod": false,
+        "pictures": ["img4.jpg", "img5.jpg", "img6.jpg"]
+    },
+    {
+        "type": "Altice One Mini",
+        "addressable": "Yes",
+        "format": "4",
+        "status": "A",
+        "equipType": "21-Sagemcom Mini Box",
+        "manufacturer": "X",
+        "location": "Z-DefaultOutlet",
+        "events": true,
+        "nvod": false,
+        "pictures": ["img7.jpg", "img8.jpg", "img9.jpg"]
+    },
+    {
+        "type": "CableCard (PowerKey)",
+        "addressable": "Yes",
+        "format": "1",
+        "status": "B",
+        "equipType": "61-Pkey M-CableCard",
+        "manufacturer": "C",
+        "location": "N (CableCard)",
+        "events": true,
+        "nvod": false,
+        "pictures": ["img10.jpg", "img11.jpg", "img12.jpg"]
+    }
+]
