@@ -31,13 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (selectedEquipment) {
                     // Populate fields
                     addressableInput.value = selectedEquipment.addressable;
-                    formatInput.value = selectedEquipment.format;
+
+                    // Handle arrays (e.g., format, equipType, manufacturer, location)
+                    formatInput.value = Array.isArray(selectedEquipment.format) ? selectedEquipment.format.join(', ') : selectedEquipment.format;
                     statusInput.value = selectedEquipment.status;
-                    equipTypeInput.value = selectedEquipment.equipType;
-                    manufacturerInput.value = selectedEquipment.manufacturer;
-                    locationInput.value = selectedEquipment.location;
-                    eventsCheckbox.checked = selectedEquipment.events;
-                    nvodCheckbox.checked = selectedEquipment.nvod;
+                    equipTypeInput.value = Array.isArray(selectedEquipment.equipType) ? selectedEquipment.equipType.join(', ') : selectedEquipment.equipType;
+                    manufacturerInput.value = Array.isArray(selectedEquipment.manufacturer) ? selectedEquipment.manufacturer.join(', ') : selectedEquipment.manufacturer;
+                    locationInput.value = Array.isArray(selectedEquipment.location) ? selectedEquipment.location.join(', ') : selectedEquipment.location;
+
+                    eventsCheckbox.checked = selectedEquipment.eventsNvod === 'Y/N';
+                    nvodCheckbox.checked = selectedEquipment.eventsNvod === 'Y/N';
 
                     // Populate pictures
                     picture1.src = selectedEquipment.pictures[0];
