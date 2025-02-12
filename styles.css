@@ -1,35 +1,131 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Container for the Guide */
 #equipment-guide {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#equipment-details {
+/* Dropdown Styling */
+#equipment-guide label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+#equipment-type {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+#equipment-type:focus {
+    border-color: #007aff;
+    outline: none;
+}
+
+/* Content Container (Pictures + Details) */
+#content-container {
+    display: flex;
     margin-top: 20px;
+    gap: 20px;
+}
+
+/* Equipment Pictures (Left Side) */
+#equipment-pictures {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#equipment-pictures img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#equipment-pictures img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Equipment Details (Right Side) */
+#equipment-details {
+    flex: 2;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #equipment-details label {
     display: block;
     margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
 }
 
 #equipment-details input[type="text"] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    transition: border-color 0.3s ease;
 }
 
-#equipment-pictures img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+#equipment-details input[type="text"]:focus {
+    border-color: #007aff;
+    outline: none;
+}
+
+/* Checkbox Styling */
+#equipment-details input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #007aff;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #content-container {
+        flex-direction: column;
+    }
+
+    #equipment-pictures {
+        margin-bottom: 20px;
+    }
 }

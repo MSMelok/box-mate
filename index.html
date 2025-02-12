@@ -15,39 +15,42 @@
             <option value="">-- Select Equipment --</option>
         </select>
 
-        <!-- Equipment Details -->
-        <div id="equipment-details">
-            <label for="addressable">Addressable:</label>
-            <input type="text" id="addressable" readonly>
+        <!-- Container for Pictures and Details -->
+        <div id="content-container">
+            <!-- Equipment Pictures (Left Side) -->
+            <div id="equipment-pictures">
+                <img id="picture1" src="" alt="Equipment Picture 1" style="display: none;">
+                <img id="picture2" src="" alt="Equipment Picture 2" style="display: none;">
+                <img id="picture3" src="" alt="Equipment Picture 3" style="display: none;">
+            </div>
 
-            <label for="format">Format:</label>
-            <input type="text" id="format" readonly>
+            <!-- Equipment Details (Right Side) -->
+            <div id="equipment-details">
+                <label for="addressable">Addressable:</label>
+                <input type="text" id="addressable" readonly>
 
-            <label for="status">Status:</label>
-            <input type="text" id="status" readonly>
+                <label for="format">Format:</label>
+                <input type="text" id="format" readonly>
 
-            <label for="equip-type">Equipment Type:</label>
-            <input type="text" id="equip-type" readonly>
+                <label for="status">Status:</label>
+                <input type="text" id="status" readonly>
 
-            <label for="manufacturer">Manufacturer:</label>
-            <input type="text" id="manufacturer" readonly>
+                <label for="equip-type">Equipment Type:</label>
+                <input type="text" id="equip-type" readonly>
 
-            <label for="location">Location:</label>
-            <input type="text" id="location" readonly>
+                <label for="manufacturer">Manufacturer:</label>
+                <input type="text" id="manufacturer" readonly>
 
-            <label>
-                <input type="checkbox" id="events" disabled> Events
-            </label>
-            <label>
-                <input type="checkbox" id="nvod" disabled> Nvod
-            </label>
-        </div>
+                <label for="location">Location:</label>
+                <input type="text" id="location" readonly>
 
-        <!-- Equipment Pictures -->
-        <div id="equipment-pictures">
-            <img id="picture1" src="" alt="Equipment Picture 1" style="display: none;">
-            <img id="picture2" src="" alt="Equipment Picture 2" style="display: none;">
-            <img id="picture3" src="" alt="Equipment Picture 3" style="display: none;">
+                <label>
+                    <input type="checkbox" id="events" disabled> Events
+                </label>
+                <label>
+                    <input type="checkbox" id="nvod" disabled> Nvod
+                </label>
+            </div>
         </div>
     </div>
 
