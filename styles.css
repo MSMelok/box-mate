@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#equipment-guide {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#equipment-details {
+    margin-top: 20px;
+}
+
+#equipment-details label {
+    display: block;
+    margin-top: 10px;
+}
+
+#equipment-details input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+#equipment-pictures img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
