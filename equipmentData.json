@@ -9,7 +9,7 @@
         "location": ["Z-DefaultOutlet"],
         "rates": "OOL and speed rates",
         "eventsNvod": "N/N",
-        "pictures": ["img1.jpg", "img2.jpg", "img3.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Altice One Main",
@@ -21,7 +21,7 @@
         "location": ["Z-DefaultOutlet"],
         "rates": "14",
         "eventsNvod": "Y/N",
-        "pictures": ["img4.jpg", "img5.jpg", "img6.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Altice One Mini",
@@ -33,7 +33,7 @@
         "location": ["Z-DefaultOutlet"],
         "rates": "13",
         "eventsNvod": "Y/N",
-        "pictures": ["img7.jpg", "img8.jpg", "img9.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Altice One Router",
@@ -45,7 +45,7 @@
         "location": ["Z-DefaultOutlet"],
         "rates": "A6",
         "eventsNvod": "N/N",
-        "pictures": ["img10.jpg", "img11.jpg", "img12.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "CableCard (PowerKey)",
@@ -57,7 +57,7 @@
         "location": ["N (CableCard)"],
         "rates": "MU",
         "eventsNvod": "Y/N",
-        "pictures": ["img13.jpg", "img14.jpg", "img15.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Fiber Gateway",
@@ -69,7 +69,7 @@
         "location": ["Z-DefaultOutlet"],
         "rates": "F. or 8H or D2",
         "eventsNvod": "N/N",
-        "pictures": ["img16.jpg", "img17.jpg", "img18.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "IPT (Telephone number)",
@@ -81,19 +81,19 @@
         "location": ["T-IPT (native)", "P-Ported IPT"],
         "rates": "OV rate code",
         "eventsNvod": "N/N",
-        "pictures": ["img19.jpg", "img20.jpg", "img21.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Modem",
         "addressable": "N",
         "format": "N/A",
         "status": "A",
-        "equipType": ["52-OOL Modem", "or", "53-OV Modem", "or", "69-Docsis 3.0", "or", "84-Cust Modem"],
+        "equipType": ["52-OOL Modem", "53-OV Modem", "69-Docsis 3.0", "84-Cust Modem"],
         "manufacturer": ["UNKNOWN"],
         "location": ["5-OV Modem"],
         "rates": "CM (if Optimum Owned)",
         "eventsNvod": "N/N",
-        "pictures": ["img22.jpg", "img23.jpg", "img24.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Range Extender",
@@ -105,7 +105,7 @@
         "location": ["W-RangeExtender"],
         "rates": "3",
         "eventsNvod": "N/N",
-        "pictures": ["img25.jpg", "img26.jpg", "img27.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Samsung Box Host ID",
@@ -117,7 +117,7 @@
         "location": ["M-JCA Equip"],
         "rates": "3E",
         "eventsNvod": "N/N",
-        "pictures": ["img28.jpg", "img29.jpg", "img30.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Samsung Box JCAS ID",
@@ -129,19 +129,19 @@
         "location": ["I-JCA ID"],
         "rates": "98",
         "eventsNvod": "Y/N",
-        "pictures": ["img31.jpg", "img32.jpg", "img33.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Scientific Atlanta Box",
         "addressable": "Y",
         "format": ["C (NDS)", "1 (PowerKey)"],
         "status": "B",
-        "equipType": ["25-29-42XX Series", "or", "45-8300 SD", "or", "47-8300 HD"],
+        "equipType": ["25-29-42XX Series", "45-8300 SD", "47-8300 HD"],
         "manufacturer": ["S - S/A"],
         "location": ["E-S/A Digital"],
         "rates": "H-High Def Eq",
         "eventsNvod": "Y/N",
-        "pictures": ["img34.jpg", "img35.jpg", "img36.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Smart Card (NDS)",
@@ -153,7 +153,7 @@
         "location": ["S-Smart Card NDS"],
         "rates": "98",
         "eventsNvod": "Y/N",
-        "pictures": ["img37.jpg", "img38.jpg", "img39.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Smart Router",
@@ -165,7 +165,7 @@
         "location": ["Z-DefaultOutlet"],
         "rates": "A6",
         "eventsNvod": "N/N",
-        "pictures": ["img40.jpg", "img41.jpg", "img42.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Static IP Router",
@@ -177,7 +177,7 @@
         "location": ["L-BStatIP"],
         "rates": "RT",
         "eventsNvod": "N/N",
-        "pictures": ["img43.jpg", "img44.jpg", "img45.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Stream device",
@@ -189,7 +189,7 @@
         "location": ["Z-DefaultOutlet"],
         "rates": "C4",
         "eventsNvod": "Y/V",
-        "pictures": ["img46.jpg", "img47.jpg", "img48.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Tuning Adapter",
@@ -201,7 +201,7 @@
         "location": ["G-Tuning Adapter"],
         "rates": "AD",
         "eventsNvod": "Y/N",
-        "pictures": ["img49.jpg", "img50.jpg", "img51.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     },
     {
         "type": "Ubee Gateway",
@@ -213,6 +213,6 @@
         "location": ["Z-DefaultOutlet"],
         "rates": "UM",
         "eventsNvod": "N/N",
-        "pictures": ["img52.jpg", "img53.jpg", "img54.jpg"]
+        "pictures": ["assets/DefultImg.png", "assets/DefultImg.png", "assets/DefultImg.png"]
     }
 ]
