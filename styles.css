@@ -1,175 +1,206 @@
 /* Import Poppins font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
 
-/* General Styles */
+/* Modern Color Variables */
+:root {
+  --primary: #007AFF;
+  --background: linear-gradient(150deg, #f0f4ff 0%, #e6e9f2 100%);
+  --glass: rgba(255, 255, 255, 0.95);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    color: #333;
-    line-height: 1.6;
-    font-weight: 400; /* Default font weight */
+  min-height: 100vh;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  line-height: 1.6;
+  color: #2d3436;
 }
 
-/* Container for the Guide */
+/* Main Container */
 #equipment-guide {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 0.6s ease-in;
 }
 
-/* Dropdown Styling */
-#equipment-guide label {
-    font-size: 16px;
-    font-weight: 500; /* Medium weight for labels */
-    color: #333;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-#equipment-type {
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #333;
-    background: #f9f9f9;
-    transition: border-color 0.3s ease;
-    font-weight: 400; /* Regular weight for dropdown */
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-#equipment-type:focus {
-    border-color: #007aff;
-    outline: none;
-}
-
-/* Content Container (Pictures + Details) */
-#content-container {
-    display: flex;
-    margin-top: 20px;
-    gap: 20px;
-}
-
-/* Equipment Pictures (Left Side) */
-#equipment-pictures {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#equipment-pictures img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#equipment-pictures img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Equipment Details (Right Side) */
-#equipment-details {
-    flex: 2;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#equipment-details label {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: 500; /* Medium weight for detail labels */
-    color: #555;
-}
-
-#equipment-details input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 14px;
-    color: #333;
-    background: #fff;
-    transition: border-color 0.3s ease;
-    font-weight: 400; /* Regular weight for input text */
-}
-
-#equipment-details input[type="text"]:focus {
-    border-color: #007aff;
-    outline: none;
-}
-
-/* Custom Checkbox Styling */
-#equipment-details .checkbox-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    align-items: flex-end;
-}
-
-#equipment-details .checkbox-container input[type="checkbox"] {
-    display: none; /* Hide the default checkbox */
-}
-
-#equipment-details .checkbox-container .custom-checkbox {
-    width: 18px; /* Size of the custom checkbox */
-    height: 18px; /* Size of the custom checkbox */
-    border: 2px solid #007aff; /* Border color */
-    border-radius: 4px; /* Slightly rounded corners */
-    background-color: #fff; /* Background color */
-    position: relative;
-    cursor: pointer;
-    margin-right: 8px;
-}
-
-#equipment-details .checkbox-container .custom-checkbox::after {
-    content: "";
-    position: absolute;
-    display: none; /* Hide the check mark by default */
-    left: 5px;
-    top: 1px;
-    width: 5px;
-    height: 10px;
-    border: solid #007aff; /* Check mark color */
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg); /* Rotate to create a check mark */
-}
-
-#equipment-details .checkbox-container input[type="checkbox"]:checked + .custom-checkbox::after {
-    display: block; /* Show the check mark when checked */
-}
-
-/* Header Styling */
 h1 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 600; /* Semi-bold weight for the header */
-    color: #333;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3436;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(45deg, #2d3436, #007AFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
-    text-align: center;
+  color: #636e72;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Selection Dropdown */
+.select-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#equipment-type {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 37%);
+  font-size: 1rem;
+  appearance: none;
+  transition: all 0.3s ease;
+}
+
+#equipment-type:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+}
+
+
+
+/* Details Panel */
+#equipment-details {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 18%);
+}
+
+.detail-group {
+  margin-bottom: 1.5rem;
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #636e72;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+input[type="text"]:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.15);
+  outline: none;
+}
+
+/* Enhanced Checkboxes */
+.checkbox-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.checkbox-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #dfe6e9;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-checkbox::after {
+  content: "";
+  width: 12px;
+  height: 6px;
+  border: 2px solid white;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+
+#events, #nvod {
+    display: none;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #content-container {
-        flex-direction: column;
-    }
+  #content-container {
+    grid-template-columns: 1fr;
+  }
 
-    #equipment-pictures {
-        margin-bottom: 20px;
-    }
+  #equipment-pictures {
+    order: -1;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

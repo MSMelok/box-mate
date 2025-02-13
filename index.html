@@ -3,57 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Maintenance Guide</title>
+    <title>BoxMate - Smart Equipment Guide</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Box Maintenance Guide</h1>
-    <p>"This tool was created to help you select the correct information when you attempt to add any equipment to the corps inventory"</p>
     <div id="equipment-guide">
-        <!-- Dropdown for Equipment Selection -->
-        <label for="equipment-type">Select Equipment:</label>
-        <select id="equipment-type">
-            <option value="">-- Select Equipment --</option>
-        </select>
+        <div class="header">
+            <h1>BoxMate</h1>
+            <p>Intelligent Equipment Selection System</p>
+        </div>
 
-        <!-- Container for Pictures and Details -->
+        <div class="select-container">
+            <select id="equipment-type">
+                <option value="">--- Select Equipment Type ---</option>
+            </select>
+        </div>
+
         <div id="content-container">
-            <!-- Equipment Pictures (Left Side) -->
-            <div id="equipment-pictures">
-                <img id="picture1" src="" alt="Equipment Picture 1" style="display: none;">
-                <img id="picture2" src="" alt="Equipment Picture 2" style="display: none;">
-                <img id="picture3" src="" alt="Equipment Picture 3" style="display: none;">
-            </div>
-
-            <!-- Equipment Details (Right Side) -->
             <div id="equipment-details">
-                <label for="addressable">Addressable:</label>
-                <input type="text" id="addressable" readonly>
-
-                <label for="format">Format:</label>
-                <input type="text" id="format" readonly>
-
-                <label for="status">Status:</label>
-                <input type="text" id="status" readonly>
-
-                <label for="equip-type">Equipment Type:</label>
-                <input type="text" id="equip-type" readonly>
-
-                <label for="manufacturer">Manufacturer:</label>
-                <input type="text" id="manufacturer" readonly>
-
-                <label for="location">Location:</label>
-                <input type="text" id="location" readonly>
-
-                <div class="checkbox-container">
-                    <input type="checkbox" id="events">
-                    <span class="custom-checkbox"></span>
-                    <label for="events">Events</label>
+                <div class="detail-group">
+                    <label>Addressable:</label>
+                    <input type="text" id="addressable" readonly>
                 </div>
-                <div class="checkbox-container">
-                    <input type="checkbox" id="nvod">
-                    <span class="custom-checkbox"></span>
-                    <label for="nvod">Nvod</label>
+                
+                <div class="detail-group">
+                    <label>Format:</label>
+                    <input type="text" id="format" readonly>
+                </div>
+
+                <div class="detail-group">
+                    <label>Status:</label>
+                    <input type="text" id="status" readonly>
+                </div>
+
+                <div class="detail-group">
+                    <label>Equipment Type:</label>
+                    <input type="text" id="equip-type" readonly>
+                </div>
+
+                <div class="detail-group">
+                    <label>Manufacturer:</label>
+                    <input type="text" id="manufacturer" readonly>
+                </div>
+
+                <div class="detail-group">
+                    <label>Location:</label>
+                    <input type="text" id="location" readonly>
+                </div>
+                <div class="checkbox-div">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="events">
+                        <div class="custom-checkbox"></div>
+                        <label for="events">Events</label>
+                    </div>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="nvod">
+                        <div class="custom-checkbox"></div>
+                        <label for="nvod">Nvod</label>
+                    </div>
                 </div>
             </div>
         </div>

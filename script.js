@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const locationInput = document.getElementById('location');
     const eventsCheckbox = document.getElementById('events');
     const nvodCheckbox = document.getElementById('nvod');
-    const picture1 = document.getElementById('picture1');
-    const picture2 = document.getElementById('picture2');
-    const picture3 = document.getElementById('picture3');
+
 
     // Fetch equipment data from JSON file
     fetch('equipmentData.json')
@@ -42,13 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     eventsCheckbox.checked = selectedEquipment.eventsNvod === 'Y/N';
                     nvodCheckbox.checked = selectedEquipment.eventsNvod === 'Y/N';
 
-                    // Populate pictures
-                    picture1.src = selectedEquipment.pictures[0];
-                    picture2.src = selectedEquipment.pictures[1];
-                    picture3.src = selectedEquipment.pictures[2];
-                    picture1.style.display = "block";
-                    picture2.style.display = "block";
-                    picture3.style.display = "block";
+                   
                 } else {
                     // Clear fields if no equipment is selected
                     addressableInput.value = "";
@@ -59,12 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     locationInput.value = "";
                     eventsCheckbox.checked = false;
                     nvodCheckbox.checked = false;
-                    picture1.src = "";
-                    picture2.src = "";
-                    picture3.src = "";
-                    picture1.style.display = "none";
-                    picture2.style.display = "none";
-                    picture3.style.display = "none";
                 }
             });
         })
